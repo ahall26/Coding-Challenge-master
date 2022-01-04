@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Contacts Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @Html.ActionLink("Add a new Contact", "Create")
+    <br />
+    @Html.ActionLink("View Mailing List", "List")
+    <br />
+    @Html.ActionLink("Mailing List API", "MailingList", "api")
+    <br />
+    @Html.ActionLink("Filtered Mailing List API", "MailingList", "api", new { LastName = "Smith", desc = "True" } )
+</div>
